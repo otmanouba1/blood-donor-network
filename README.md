@@ -1,8 +1,8 @@
-# Blood Bank Management System (BBMS)
+# Blood Donor Network
 
 ## Overview
 
-The **Blood Bank Management System (BBMS)** is a production-ready web-based platform designed to streamline the management of blood donations, hospital requests, and inventory tracking. By replacing manual processes with a structured digital workflow, BBMS enables hospitals and blood banks to access real-time inventory, maintain donor records, and process blood requests efficiently.
+The **Blood Donor Network** is a production-ready web-based platform designed to streamline the management of blood donations, hospital requests, and inventory tracking. By replacing manual processes with a structured digital workflow, the system enables hospitals and blood banks to access real-time inventory, maintain donor records, and process blood requests efficiently.
 
 ## 🚀 Quick Deployment
 
@@ -10,8 +10,8 @@ For detailed deployment instructions, see [DEPLOYMENT.md](DEPLOYMENT.md)
 
 ```bash
 # Quick start
-git clone <your-repo-url>
-cd blood-bank-management-system
+git clone https://github.com/otmanouba1/blood-donor-network.git
+cd blood-donor-network
 npm run install-all
 npm run seed-admin
 npm run build

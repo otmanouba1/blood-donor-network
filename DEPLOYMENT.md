@@ -1,4 +1,4 @@
-# Blood Bank Management System - Deployment Guide
+# Blood Donor Network - Deployment Guide
 
 ## Quick Start
 
@@ -11,8 +11,8 @@
 
 1. **Clone the repository**
    ```bash
-   git clone <your-repository-url>
-   cd blood-bank-management-system
+   git clone https://github.com/otmanouba1/blood-donor-network.git
+   cd blood-donor-network
    ```
 
 2. **Install all dependencies**
