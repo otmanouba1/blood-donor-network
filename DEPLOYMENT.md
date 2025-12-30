@@ -144,8 +144,8 @@ CMD ["npm", "start"]
 ## Default Admin Credentials
 
 After running the seed script, use these credentials to login:
-- **Email**: admin@bloodbank.com
-- **Password**: admin123
+- **Email**: atmane@admin.com
+- **Password**: bbms@admin
 
 **⚠️ Important**: Change these credentials immediately after first login.
 
