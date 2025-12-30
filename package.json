@@ -1,0 +1,30 @@
+{
+  "name": "blood-bank-management-system",
+  "version": "1.0.0",
+  "description": "A comprehensive blood bank management system for hospitals and blood banks",
+  "scripts": {
+    "install-all": "npm install && cd frontend && npm install && cd ../backend && npm install",
+    "build": "cd frontend && npm run build",
+    "build:prod": "npm run build && npm run copy-build",
+    "copy-build": "mkdir -p backend/public && cp -r frontend/dist/* backend/public/ || (if not exist backend\\public mkdir backend\\public && xcopy frontend\\dist\\* backend\\public\\ /E /Y /Q)",
+    "start": "cd backend && npm start",
+    "dev": "concurrently \"cd backend && npm run dev\" \"cd frontend && npm run dev\"",
+    "seed-admin": "cd backend && node seedAdmin.js",
+    "docker:build": "docker build -t bbms .",
+    "docker:run": "docker-compose up -d",
+    "docker:stop": "docker-compose down"
+  },
+  "keywords": [
+    "blood-bank",
+    "healthcare",
+    "management-system",
+    "react",
+    "nodejs",
+    "mongodb"
+  ],
+  "author": "",
+  "license": "MIT",
+  "devDependencies": {
+    "concurrently": "^8.2.2"
+  }
+}
