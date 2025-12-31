@@ -106,34 +106,18 @@ export default function Header({ currentUser }) {
                 </div>
               </Button>
             </SheetTrigger>
-            <SheetContent side="right" className="w-72 p-6">
-              <ScrollArea className="h-full">
-                <div className="space-y-4">
-                  {navLinks.map((link) => (
-                    <Link
-                      key={link.name}
-                      to={link.path}
-                      className={cn(
-                        "block px-4 py-3 rounded-xl text-base font-medium transition-all duration-200",
-                        isActive(link.path)
-                          ? "bg-red-50 text-red-700 border-l-4 border-red-500"
-                          : "text-gray-700 hover:bg-gray-50 hover:text-red-600"
-                      )}
-                    >
-                      {link.name}
-                    </Link>
-                  ))}
-
-                  <div className="border-t border-gray-200 pt-4 mt-4 space-y-2">
-                    {authLinks.map((link) => (
+            <SheetContent side="right" className="w-72 p-6 bg-white">
+              <div className="fixed inset-0 bg-black/50 backdrop-blur-sm" />
+              <div className="relative z-10 bg-white h-full rounded-l-2xl shadow-2xl">
+                <ScrollArea className="h-full p-6">
+                  <div className="space-y-4">
+                    {navLinks.map((link) => (
                       <Link
                         key={link.name}
                         to={link.path}
                         className={cn(
-                          "block px-4 py-3 rounded-xl text-base font-medium transition-all duration-200 text-center",
-                          link.name.includes("Register")
-                            ? "bg-gradient-to-r from-red-600 to-red-700 text-white shadow-lg hover:shadow-xl"
-                            : isActive(link.path)
+                          "block px-4 py-3 rounded-xl text-base font-medium transition-all duration-200",
+                          isActive(link.path)
                             ? "bg-red-50 text-red-700 border-l-4 border-red-500"
                             : "text-gray-700 hover:bg-gray-50 hover:text-red-600"
                         )}
@@ -141,9 +125,28 @@ export default function Header({ currentUser }) {
                         {link.name}
                       </Link>
                     ))}
+
+                    <div className="border-t border-gray-200 pt-4 mt-4 space-y-2">
+                      {authLinks.map((link) => (
+                        <Link
+                          key={link.name}
+                          to={link.path}
+                          className={cn(
+                            "block px-4 py-3 rounded-xl text-base font-medium transition-all duration-200 text-center",
+                            link.name.includes("Register")
+                              ? "bg-gradient-to-r from-red-600 to-red-700 text-white shadow-lg hover:shadow-xl"
+                              : isActive(link.path)
+                              ? "bg-red-50 text-red-700 border-l-4 border-red-500"
+                              : "text-gray-700 hover:bg-gray-50 hover:text-red-600"
+                          )}
+                        >
+                          {link.name}
+                        </Link>
+                      ))}
+                    </div>
                   </div>
-                </div>
-              </ScrollArea>
+                </ScrollArea>
+              </div>
             </SheetContent>
           </Sheet>
         </div>
