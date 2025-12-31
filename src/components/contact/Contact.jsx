@@ -25,17 +25,17 @@ const Contact = () => {
     {
       icon: Phone,
       title: "Emergency Helpline",
-      lines: ["+91 98765 43210", "Available 24/7"],
+      lines: ["+212 522 123 456", "Available 24/7"],
     },
     {
       icon: Mail,
       title: "Email Us",
-      lines: ["support@bloodconnect.org", "info@bloodconnect.org"],
+      lines: ["support@bloodnetwork.ma", "info@bloodnetwork.ma"],
     },
     {
       icon: MapPin,
       title: "Head Office",
-      lines: ["Navi Mumbai, Maharashtra", "India - 410206"],
+      lines: ["Casablanca, Grand Casablanca", "Morocco - 20000"],
     },
   ];
 
@@ -101,19 +101,19 @@ const Contact = () => {
                 <div className="bg-red-50 p-3 rounded-xl text-red-600">
                   <Phone className="w-5 h-5" />
                 </div>
-                <span className="text-slate-500 font-medium">+91 1234567890</span>
+                <span className="text-slate-500 font-medium">+212 522 123 456</span>
               </div>
               <div className="flex items-center gap-3">
                 <div className="bg-red-50 p-3 rounded-xl text-red-600">
                   <Mail className="w-5 h-5" />
                 </div>
-                <span className="text-slate-500 font-medium">support@bloodconnect.org</span>
+                <span className="text-slate-500 font-medium">support@bloodnetwork.ma</span>
               </div>
               <div className="flex items-center gap-3">
                 <div className="bg-red-50 p-3 rounded-xl text-red-600">
                   <MapPin className="w-5 h-5" />
                 </div>
-                <span className="text-slate-500 font-medium">Navi Mumbai, Maharashtra</span>
+                <span className="text-slate-500 font-medium">Casablanca, Grand Casablanca</span>
               </div>
             </div>
 
